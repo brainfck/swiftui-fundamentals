@@ -1,11 +1,9 @@
-# User-specific files
-*.swp
+# Ignore user-specific and generated files
+.DS_Store
 *.xcuserstate
-*.xcuserdatad
-*.xccheckout
-*.DS_Store
+xcuserdata/
 
-# Build artifacts and derived data
+# Ignore build artifacts
 DerivedData/
 build/
 *.ipa
@@ -14,61 +12,26 @@ build/
 *.dSYM
 
 # Swift Package Manager
-#
-# Add this if you have a Packages directory in your root.
-# Packages/
 .swiftpm/
 .build/
 
 # CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However,
-# you should judge for yourself, the pros and cons are mentioned at:
-# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
 Pods/
 
 # Carthage
 Carthage/Build
 
-# Xcode project files
-*.xcodeproj/*
-!*.xcodeproj/project.pbxproj
-!*.xcodeproj/xcshareddata/
-!*.xcodeproj/xcshareddata/**
-*.xcworkspace/*
-!*.xcworkspace/contents.xcworkspacedata
-!*.xcworkspace/xcshareddata/
-!*.xcworkspace/xcshareddata/**
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
 
-# Xcode Playground files
-timeline.xctimeline
-playground.xcworkspace
+# Xcode project files to ignore
+*.xcworkspace/xcuserdata
+*.xcworkspace/xcuserdata/*
+*.xcodeproj/xcuserdata
+*.xcodeproj/xcuserdata/*
 
-# Xcode automatically generated files
-*.pbxuser
-*.mode1v3
-*.mode2v3
-*.perspectivev3
-
-# App Store Connect
-*.itmsp
-
-# SwiftUI previews and screenshots
+# Ignore SwiftUI previews
 .swiftUIPreviews/
-
-# Bundler
-/.bundle/
-
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo.
-# Instead, use fastlane to re-generate the screenshots.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/
-*/fastlane/report.xml
-*/fastlane/Preview.html
-*/fastlane/screenshots/**/*.png
-*/fastlane/test_output
-
-# Xcode logs
-xcdebugger/
