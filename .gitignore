@@ -1,37 +1,45 @@
-# Ignore user-specific and generated files
+# Xcode
 .DS_Store
 *.xcuserstate
-xcuserdata/
-
-# Ignore build artifacts
-DerivedData/
-build/
-*.ipa
-*.app
-*.dSYM.zip
-*.dSYM
+*.xcscmblueprint
+*.xccheckout
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/xcshareddata/*
 
 # Swift Package Manager
-.swiftpm/
 .build/
+Packages/
+Package.pins
+Package.resolved
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/*
 
 # CocoaPods
 Pods/
+Podfile.lock
+Podfile
 
 # Carthage
-Carthage/Build
+Carthage/Build/
 
 # Fastlane
 fastlane/report.xml
 fastlane/Preview.html
-fastlane/screenshots/**/*.png
+fastlane/screenshots
 fastlane/test_output
+fastlane/report.xml
+fastlane/*.lock
 
-# Xcode project files to ignore
-*.xcworkspace/xcuserdata
-*.xcworkspace/xcuserdata/*
-*.xcodeproj/xcuserdata
-*.xcodeproj/xcuserdata/*
+# Generated files
+*.ipa
+*.dSYM.zip
+*.dSYM
 
-# Ignore SwiftUI previews
-.swiftUIPreviews/
+# Temporary files
+*.moved-aside
+*.swp
+*.lock
+*.xcuserdatad/
+DerivedData/

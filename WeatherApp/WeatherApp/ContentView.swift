@@ -13,7 +13,7 @@ struct ContentView: View {
       BackgroundView(isNight: isNight)
       
       VStack {
-        CityTextView(cityName: "Cupertino, CA")
+        CityTextView(cityName: "Weinböhla, Saxony")
         MainWeatherStatusView(imageName: isNight ? "moon.stars.fill" : "cloud.sun.fill", temperature: 25)
         
         HStack(spacing: 20) {
